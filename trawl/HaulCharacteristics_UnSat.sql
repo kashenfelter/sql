@@ -11,8 +11,12 @@ select project,
        best_depth_m,
        best_depth_type,
        DURATION_START2END_HR,
-       area_swept_ha
-       ,Operation_Status,
+       area_swept_ha,
+       Operation_Status,
+       temperature_at_gear_degc,
+       gear_salinity_psu,
+       gear_oxygen_ml_per_l,
+       gear_light_umol_phot_per_m2sec
        Removal_Reason,
        Survey_Lat_Chk,
        Survey_Depth_Chk
