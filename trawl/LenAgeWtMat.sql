@@ -19,7 +19,6 @@ select
        a.weight_kg,
        a.age_yrs,
        m.mature_yn,
-       m.assumed_spawner_yn,
        m.proportion_atresia,
        m.spent_yn,
        m.maturity_certain_yn,

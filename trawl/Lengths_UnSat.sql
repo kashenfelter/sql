@@ -15,7 +15,6 @@ select aspp.scientific_name, aspp.species,
        l.length_cm
        ,h.Operation_Status,
        h.Removal_Reason,
-       h.Survey_Lat_Chk,
        h.Survey_Depth_Chk
 
 from master.VW_Assessment_Species aspp

@@ -18,7 +18,6 @@ select project,
        gear_oxygen_ml_per_l,
        gear_light_umol_phot_per_m2sec
        Removal_Reason,
-       Survey_Lat_Chk,
        Survey_Depth_Chk
 from master.VW_Haul_Chars_UnSat
 where project_cycle between 'Cycle &beginyr' and 'Cycle &endyr'
