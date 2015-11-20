@@ -22,7 +22,7 @@ select
        h.Operation_Status
 from master.VW_Assessment_Species aspp
 inner join master.VW_Haul_Chars_Sat h
-on aspp.scientific_name in(&sp)   -- Must contain the same species as listed in the Pivot In clause below (without the aliases)
+on aspp.species_code in(&sp)   -- Must contain the same species as listed in the Pivot In clause below (without the aliases)
 left join master.VW_Catch_Wts_Nums_All c
 on c.sample_id = h.sample_id
 and c.species = aspp.species
