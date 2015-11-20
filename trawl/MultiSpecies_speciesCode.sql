@@ -31,7 +31,7 @@ where h.project_cycle between 'Cycle &beginyr' and 'Cycle &endyr'    -- Can be u
 PIVOT (
         Max(haul_wt_kg) AS haul_wt_kg,
         Max(avg_wt_kg) AS avg_wt_kg
-        FOR species_code
+        FOR scientific_name
         IN(&msp)
       )
 order by haul_identifier;
