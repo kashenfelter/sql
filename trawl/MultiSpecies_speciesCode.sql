@@ -3,7 +3,7 @@
 select *
 from (
 select
-       aspp.scientific_name,
+--       aspp.scientific_name,
        aspp.species_code,
        h.project,
        h.project_cycle,
@@ -31,7 +31,7 @@ where h.project_cycle between 'Cycle &beginyr' and 'Cycle &endyr'    -- Can be u
 PIVOT (
         Max(haul_wt_kg) AS haul_wt_kg,
         Max(avg_wt_kg) AS avg_wt_kg
-        FOR scientific_name
+        FOR species_code
         IN(&msp)
       )
 order by haul_identifier;
